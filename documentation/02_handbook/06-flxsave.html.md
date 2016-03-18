@@ -40,7 +40,7 @@ _gameSave.flush();
 
 ##### flush()
 Writes the local shared object to disk immediately.
-**Required on non-Flash targets.**
+**Required on non-Flash targets for data to even persist between calls to `FlxG.switchState()`.**
 
 ##### Serialization
 In certain cases you may need to [serialize and unserialize](http://haxe.org/manual/serialization) your data (fancy words for "take my data and turn it into a specially formatted string, or back into data") to avoid errors, but you may want to try it without serialization unless you experience problems.
